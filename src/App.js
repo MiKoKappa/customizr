@@ -7,7 +7,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 
 export function Model({colors, setHovered, setSelected}) {
     const group = useRef()
-    const { nodes, materials } = useGLTF('/model.glb')
+    const { nodes, materials } = useGLTF('%PUBLIC_URL%/model.glb')
     
     
     return (
